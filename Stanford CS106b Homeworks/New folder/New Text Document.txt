@@ -1,0 +1,54 @@
+void encrypt(MyMap freqTable) {
+    string ALPHABET = ABCDEFGHIJKLMNOPQRSTUVWXYZ{},;
+    string key = getLine(Enter a keyword to use to encrypt your map!);
+    key = toLowerCase(key);
+    Vectorstring alphabets;
+
+    for(int i = 0; i  30; i++) {
+        alphabets.add(ALPHABET.substr(ALPHABET.length() - i,i) + ALPHABET.substr(0, ALPHABET.length() - i));
+        cout  ALPHABET.substr(ALPHABET.length() - i,i) + ALPHABET.substr(0, ALPHABET.length() - i)  endl;
+    }
+
+    string editmessage = freqTable;
+    String editcode = code;
+    final int finalmesslength = message.length();
+    int editlength = message.length();
+    int xx = 0;
+    while(xx  finalmesslength)
+    {
+        extendedmessage = extendedmessage + code;
+        xx = extendedmessage.length();
+    }
+    int yy = 0; int inc = 0;
+    while(editmessage.length()  0 && yy  finalmesslength)
+    {
+        if(a.indexOf(editmessage.substring(0,1)) == -1)
+        {
+            answer += editmessage.substring(0,1);
+        }
+        else
+        {
+            answer += alpha[a.indexOf(extendedmessage.charAt(yy) + )].charAt(a.indexOf(editmessage.substring(0,1)));
+            yy++;
+        }
+        editmessage = editmessage.substring(1);
+
+    }
+
+}
+
+string forEncryption(MyMap &myMap) {
+    string answer = ;
+    answer += {;
+    Vectorint keys = myMap.keys();
+    for (int i=0; i  keys.size(); i++) {
+        char key = keys[i];
+        int value = myMap.get(key);
+        answer += key +  + value;
+        if (i  keys.size() - 1) {  print the comma after each pair except the last
+            answer += , ;
+        }
+    }
+    answer += };
+    return answer;
+}
